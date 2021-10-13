@@ -258,6 +258,10 @@ h5 {
         /* transform: translateY(-100%); */
         left: calc(100vh - 85vh);
     }
+    .card-body input[type]::placeholder {
+        font-size: 18px;
+    }
+    
 }
 
 @media only screen and (min-width: 1200px) {
