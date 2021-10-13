@@ -53,7 +53,7 @@ h5 {
 
 .title-end {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     color: var(--primary-blue);
 }
 
@@ -133,14 +133,14 @@ h5 {
 
 .card-body input[type]::placeholder {
     color: var(--primary-blue);
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
 }
 
 .btn {
     background-color: var(--bg-botton);
     color: #000000;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -156,6 +156,22 @@ h5 {
     color: #000000;
     font-size: 25px;
     font-weight: 600;
+}
+
+.imgF .huawei {
+    width: 50%;
+}
+.imgF .wesap{
+    width: 50%;
+}
+.imgF .boyum{
+    width: 40%;
+}
+.imgF .ximplify{
+    width: 20%;
+}
+.imgF .prolibu{
+    width: 20%;
 }
 
 .footer {
@@ -216,6 +232,12 @@ h5 {
     .title-form {
         font-size: 11px;
     }
+    .btn {
+        background-color: var(--bg-botton);
+        color: #000000;
+        font-size: 25px;
+        font-weight: 600;
+    }
     .footer h6 {
         font-size: var(--body);
     }
@@ -260,6 +282,21 @@ h5 {
     }
     .title-form {
         font-size: 30px;
+    }
+    .imgF .huawei {
+        width: auto;
+    }
+    .imgF .wesap{
+        width: auto;
+    }
+    .imgF .boyum{
+        width: auto;
+    }
+    .imgF .ximplify{
+        width: auto;
+    }
+    .imgF .prolibu{
+        width: auto;
     }
 }
 
