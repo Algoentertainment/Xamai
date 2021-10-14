@@ -6,7 +6,7 @@
     --form-blue: #003845;
     --bg-form: #D9D9D9;
     --bg-card: #676565;
-    --bg-botton: #FFF607;
+    --bg-botton: #FFD422;
     --size-title: 28px;
     --size-title-mobile: 18px;
     --size-subtitle: 30px;
@@ -22,8 +22,8 @@
     --card-price: 32px;
     --card-price-mobile: 28px;
     --button: 14px;
-    --font-secondary: 'Poiret One', cursive;
-    --font-principal: 'Montserrat', sans-serif;
+    --font-secondary: 'Lato', sans-serif;
+    --font-principal: 'Poppins', sans-serif;
 }
 
 * {
@@ -175,8 +175,9 @@ h5 {
 }
 
 .footer {
-    background-color: var(--bg-botton);
-    color: var(--primary-blue);
+    font-family: var(--font-secondary);
+    background-color: #544992;
+    color: white;
 }
 
 .footer h6 {
@@ -216,7 +217,7 @@ h5 {
         font-size: 26px;
     }
     .carousel-item .banner {
-        content: url("../assets/images/header_tablet.jpg");
+        content: url("../assets/images/landingF.jpg");
     }
     .carousel-caption img {
         position: absolute;
