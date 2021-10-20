@@ -32,6 +32,11 @@
     box-sizing: border-box;
 }
 
+p {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
 body {
     font-family: var(--font-principal);
     font-size: var(--body-mobile)
@@ -60,7 +65,8 @@ nav {
     font-size: 20px;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.active {
     color: #FFD422;
 }
 
@@ -137,6 +143,10 @@ nav {
 .btn:hover {
     background-color: #000;
     color: var(--bg-botton);
+}
+
+td .calendar {
+    font-size: 13px;
 }
 
 video {
