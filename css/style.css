@@ -47,8 +47,21 @@ h5 {
     font-size: var(--size-subtitle-mobile)
 }
 
-.w700{
+.w700 {
     font-weight: 700;
+}
+
+nav {
+    background-color: #000;
+}
+
+.nav-link {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #FFD422;
 }
 
 .title-end {
@@ -101,29 +114,6 @@ h5 {
     height: 84vh;
 }
 
-.carousel-caption {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-100%);
-    /* color: var(--primary-cream); */
-}
-
-.carousel-caption img {
-    position: absolute;
-    top: calc(100vh - 47vh);
-    /* transform: translateY(-100%); */
-    left: calc(100vh - 95vh);
-    /* transform: translateX(-40%); */
-}
-
-.logos img {
-    width: 45%;
-    position: absolute;
-    top: calc(100vh - 98vh);
-    /* transform: translateY(-100%); */
-    left: calc(100vh - 101vh);
-}
-
 .card-body input[type] {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.4);
@@ -144,6 +134,16 @@ h5 {
     font-weight: 600;
 }
 
+.btn:hover {
+    background-color: #000;
+    color: var(--bg-botton);
+}
+
+video {
+    width: 80%;
+    height: auto;
+}
+
 .addeventatc {
     background-color: var(--bg-botton);
     color: #000000;
@@ -161,16 +161,20 @@ h5 {
 .imgF .huawei {
     width: 50%;
 }
-.imgF .wesap{
+
+.imgF .wesap {
     width: 50%;
 }
-.imgF .boyum{
+
+.imgF .boyum {
     width: 40%;
 }
-.imgF .ximplify{
+
+.imgF .ximplify {
     width: 20%;
 }
-.imgF .prolibu{
+
+.imgF .prolibu {
     width: 20%;
 }
 
@@ -182,7 +186,6 @@ h5 {
 
 .footer h6 {
     font-size: var(--footer-mobile);
-
 }
 
 .error {
@@ -204,7 +207,6 @@ h5 {
     padding: 0.3em;
 }
 
-
 @media only screen and (min-width: 768px) {
     body {
         font-size: var(--body-m)
@@ -218,17 +220,6 @@ h5 {
     }
     .carousel-item .banner {
         content: url("../assets/images/landingF.jpg");
-    }
-    .carousel-caption img {
-        position: absolute;
-        top: calc(100vh - 46vh);
-        left: calc(100vh - 85vh);
-    }
-    .logos img {
-        position: absolute;
-        top: calc(100vh - 100vh);
-        /* transform: translateY(-100%); */
-        left: calc(100vh - 85vh);
     }
     .title-form {
         font-size: 11px;
@@ -245,24 +236,12 @@ h5 {
 }
 
 @media only screen and (min-width: 1024px) {
-    .carousel-caption img {
-        position: absolute;
-        top: calc(100vh - 42vh);
-        left: calc(100vh - 75vh);
-    }
     .title-end {
         font-size: 28px;
-    }
-    .logos img {
-        position: absolute;
-        top: calc(100vh - 100vh);
-        /* transform: translateY(-100%); */
-        left: calc(100vh - 85vh);
     }
     .card-body input[type]::placeholder {
         font-size: 18px;
     }
-    
 }
 
 @media only screen and (min-width: 1200px) {
@@ -273,54 +252,27 @@ h5 {
         content: url("../assets/images/landingF.jpg");
         height: 74vh;
     }
-    .carousel-caption img {
-        position: absolute;
-        width: 35%;
-        top: calc(100vh - 63vh);
-        left: calc(100vh - 20vh);
-    }
-    .logos img {
-        width: 30%;
-        position: absolute;
-        top: calc(100vh - 98vh);
-        left: calc(100vh - 115vh);
-    }
     .title-form {
         font-size: 30px;
     }
     .imgF .huawei {
         width: auto;
     }
-    .imgF .wesap{
+    .imgF .wesap {
         width: auto;
     }
-    .imgF .boyum{
+    .imgF .boyum {
         width: auto;
     }
-    .imgF .ximplify{
+    .imgF .ximplify {
         width: auto;
     }
-    .imgF .prolibu{
+    .imgF .prolibu {
         width: auto;
     }
 }
 
 @media only screen and (min-width: 1500px) {
-    .carousel-item .banner {
-        height: 80vh;
-    }
-    .carousel-caption img {
-        position: absolute;
-        width: 30%;
-        top: calc(100vh - 60vh);
-        left: calc(130vh - 8vh);
-    }
-    .logos img {
-        width: 30%;
-        position: absolute;
-        top: calc(100vh - 98vh);
-        left: calc(50vh - 70vh);
-    }
     .title-end {
         font-size: 44px;
     }
