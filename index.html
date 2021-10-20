@@ -239,8 +239,11 @@
     <script src="./js/wow.js"></script>
     <script>
         wow = new WOW({
-            animateClass: 'animated',
-            offset: 0,
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true, // default
             callback: function(box) {
                 console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
             }
