@@ -83,6 +83,11 @@ nav {
     font-weight: bold;
 }
 
+.title-a {
+    font-size: 25px;
+    font-weight: 700;
+}
+
 .title-end {
     font-weight: 500;
     font-size: 13px;
@@ -160,7 +165,7 @@ td.bg-codigo,
 .btn {
     background-color: var(--bg-botton);
     color: #000000;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
 }
 
