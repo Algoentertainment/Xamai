@@ -144,8 +144,7 @@ td.bg-codigo,
 }
 
 .carousel-item .banner {
-    content: url("../assets/images/x.jpg");
-    width: 100vh;
+    content: url("../assets/images/movil.jpg");
     height: 64vh;
 }
 
