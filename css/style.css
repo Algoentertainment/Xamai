@@ -139,7 +139,8 @@ td.bg-codigo,
 }
 
 .carousel-item .banner {
-    content: url("../assets/images/landingf_movil.jpg");
+    content: url("../assets/images/landingf_movil1.jpg");
+    width: 100vh;
     height: 64vh;
 }
 
