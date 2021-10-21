@@ -78,9 +78,14 @@ nav {
     border-color: var(--bg-botton);
 }
 
+.text-fecha {
+    font-size: 22px;
+    font-weight: bold;
+}
+
 .title-end {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 13px;
     color: var(--primary-blue);
 }
 
@@ -91,6 +96,11 @@ nav {
     line-height: normal;
 }
 
+.border-gray {
+    border: 3px solid;
+    border-color: #676565;
+}
+
 .bg-blue {
     background-color: var(--primary-blue);
 }
@@ -99,12 +109,17 @@ nav {
     background-color: var(--bg-botton);
 }
 
+td.bg-codigo,
 .bg-codigo {
     background-color: var(--bg-card);
 }
 
 .bg-gray {
     background-color: var(--bg-form);
+}
+
+.bg-title {
+    background-color: var(--bg-botton);
 }
 
 .body-color {
@@ -124,8 +139,8 @@ nav {
 }
 
 .carousel-item .banner {
-    src: url("../assets/images/landingf_movil.jpg");
-    height: 84vh;
+    content: url("../assets/images/landingf_movil.jpg");
+    height: 64vh;
 }
 
 .card-body input[type] {
@@ -158,7 +173,7 @@ td .calendar {
 }
 
 video {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -176,7 +191,8 @@ video {
     font-weight: 600;
 }
 
-.imgF .huawei {
+
+/* .imgF .huawei {
     width: 50%;
 }
 
@@ -194,7 +210,7 @@ video {
 
 .imgF .prolibu {
     width: 20%;
-}
+} */
 
 .footer {
     font-family: var(--font-secondary);
@@ -242,6 +258,10 @@ video {
     .title-form {
         font-size: 11px;
     }
+    video {
+        width: 80%;
+        height: auto;
+    }
     .btn {
         background-color: var(--bg-botton);
         color: #000000;
@@ -250,6 +270,9 @@ video {
     }
     .footer h6 {
         font-size: var(--body);
+    }
+    .bg-title {
+        background-color: transparent;
     }
 }
 
@@ -260,9 +283,16 @@ video {
     .card-body input[type]::placeholder {
         font-size: 18px;
     }
+    .text-fecha {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
+    .title-a {
+        font-size: 78px;
+        font-weight: 700;
+    }
     body {
         font-size: var(--body)
     }
