@@ -182,7 +182,8 @@ video {
     height: auto;
 }
 
-.addeventatc {
+
+/* .addeventatc {
     background-color: var(--bg-botton);
     color: #000000;
     font-size: 25px;
@@ -194,7 +195,7 @@ video {
     color: #000000;
     font-size: 25px;
     font-weight: 600;
-}
+} */
 
 
 /* .imgF .huawei {
