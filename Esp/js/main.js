@@ -1,5 +1,5 @@
 const formCisco = document.forms['formXamai'];
-const scriptURLXamai = "https://script.google.com/macros/s/AKfycbyWsGHaBBXkfYUnU-IPGM7bZDiJOIP77He4MWkGXA42cTRpMlnwRrlQpKS3wLuo-Q/exec";
+const scriptURLXamai = "https://script.google.com/macros/s/AKfycbxLCSmeae5-pHwH_ub9LQHM9_UM9XLMVGXJTyZgOkPEXnnBgjkvWMB_zm9Y0hzaVXpp4A/exec";
 let botton = document.getElementById("enviar");
 let email = document.getElementById("inputEmail");
 let corpo = document.getElementsByClassName("error");
