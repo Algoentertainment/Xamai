@@ -1,0 +1,18 @@
+Secure SSL/TLS Settings (Recomendado)
+Nombre de usuario:	contacto@b1konnect.com
+Contraseña:	Utilice la contraseña de la cuenta de correo electrónico.
+Servidor entrante:	b1konnect.com
+IMAP Port: 993 POP3 Port: 995
+Servidor de correo:	b1konnect.com
+SMTP Port: 465
+IMAP, POP3 y SMTP require authentication.
+
+
+Non-SSL Settings (NOT Recommended).
+Nombre de usuario:	contacto@b1konnect.com
+Contraseña:	Utilice la contraseña de la cuenta de correo electrónico.
+Servidor entrante:	mail.b1konnect.com
+IMAP Port: 143 POP3 Port: 110
+Servidor de correo:	mail.b1konnect.com
+SMTP Port: 587
+IMAP, POP3 y SMTP require authentication.
