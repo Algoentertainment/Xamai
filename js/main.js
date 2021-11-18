@@ -3,6 +3,7 @@ const scriptURLXamai = "https://script.google.com/macros/s/AKfycbyWsGHaBBXkfYUnU
 let botton = document.getElementById("enviar");
 let email = document.getElementById("inputEmail");
 let corpo = document.getElementsByClassName("error");
+
 var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
     keyboard: false
 })
@@ -20,6 +21,13 @@ function handleClientLoad() {
     gapi.load('client:auth2', initClient);
 }
 
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('popId');
+if (myParam == 88) {
+
+        myModal.show()
+    
+}
 /**
  *  Initializes the API client library and sets up sign-in state
  *  listeners.
@@ -37,52 +45,6 @@ function initClient() {
 
 formCisco.addEventListener('submit', e => {
     e.preventDefault()
-    const texto = email.value;
-    var evaluaemail = -1;
-    corpo.innerHTML = "";
-    corpo.className = "error";
-    // gapi.client.sheets.spreadsheets.values.get({
-    //     spreadsheetId: '1mIPFQYyW-Ftyc-glCSLZXJ9Efqs02okRq_5APqzeuQo',
-    //     range: 'C2:100',
-    // }).then(function(response) {
-    //     var range = response.result;
-    //     if (range.values.length > 0) {
-    //         for (i = 0; i < range.values.length; i++) {
-    //             var row = range.values[i];
-    //             // Print columns A and E, which correspond to indices 0 and 4.
-
-    //             if (texto == row[0]) {
-    //                 evaluaemail = 1;
-    //                 break;
-    //             }
-    //         }
-
-    //         if (evaluaemail == 1) {
-
-    //             corpo[0].innerHTML = "Correo Registrado";
-    //             corpo[0].className = "error active";
-
-    //         } else {
-
-    //             corpo[0].innerHTML = "";
-    //             corpo[0].className = "error";
-    //             botton.setAttribute("disabled", false);
-    //             fetch(scriptURLXamai, {
-    //                     method: 'POST',
-    //                     body: new FormData(formXamai)
-    //                 })
-    //                 .then(response => Cambio())
-    //                 .catch(error => console.error('Error!', error.message))
-    //         }
-    //     } else {
-    //         console.log('No data found.');
-    //     }
-    // }, function(response) {
-    //     console.log('Error: ' + response.result.error.message);
-    // });
-
-    corpo[0].innerHTML = "";
-    corpo[0].className = "error";
     botton.setAttribute("disabled", false);
     fetch(scriptURLXamai, {
             method: 'POST',
@@ -97,8 +59,12 @@ formCisco.addEventListener('submit', e => {
 })
 
 function Cambio() {
-    document.getElementById("xamai").reset();
-    botton.removeAttribute("disabled");
+    // document.getElementById("xamai").reset();
+    // botton.removeAttribute("disabled");
     // relatedTarget
-    myModal.show()
+    // myModal.show()
+    var texto = email.value;
+    dir  = './mail/mail.php?email='
+    url = dir + texto; 
+    window.location.href= url;
 }
